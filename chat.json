@@ -1,3 +1,35 @@
-[
-    
-]
+{
+    "chatHistory": [
+        {
+            "sender": "foreman",
+            "message": "ayo?",
+            "timestamp": "2"
+        },
+        {
+            "sender": "juror8",
+            "message": "heyyy",
+            "timestamp": "4"
+        },
+        {
+            "sender": "juror12",
+            "message": "yoooo",
+            "timestamp": "5"
+        }
+    ],
+    "chatBar": [
+        {
+            "message": "hey hru?",
+            "outcome": {
+                "chatHistory": [],
+                "chatBar": []
+            }
+        },
+        {
+            "message": "hey hru?",
+            "outcome": {
+                "chatHistory": [],
+                "chatBar": []
+            }
+        }
+    ]
+}
