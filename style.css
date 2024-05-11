@@ -105,7 +105,11 @@ body {
 	font-weight: 800;
 }
 
-.narratorContainer{
+.textBox > *:not(:first-child)::before {
+	content: '\00a0';
+}
+
+.narratorContainer {
 	margin: 0 auto;
 	font-style: italic;
 	font-size: 0.75rem;

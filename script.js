@@ -19,34 +19,52 @@ fetchChat();
 /* ~~~~~~~~~ */
 
 function createHTMLDialogue(jurorName, message) {
-	// create
-	const replyContainer = document.createElement('div');
-	if (jurorName.charAt(5) === '8') replyContainer.classList = 'replyContainer mainCharacter';
-	else replyContainer.classList = 'replyContainer';
+	if (jurorName === 'narrator') {
+		// create
+		const narratorContainer = document.createElement('div');
+		narratorContainer.classList = 'narratorContainer';
+		const textBox = document.createElement('span');
+		textBox.classList = 'textBox';
+		textBox.innerHTML = message;
 
-	const profile = document.createElement('div');
-	profile.classList = 'profile';
-	const profileImage = document.createElement('img');
-	profileImage.src = `./assets/${jurorName}.png`;
+		// append to chatContainer
+		narratorContainer.append(textBox);
+		document.getElementById('chatContainer').append(narratorContainer);
+	} else {
+		// create
+		const replyContainer = document.createElement('div');
+		if (jurorName.charAt(5) === '8') replyContainer.classList = 'replyContainer mainCharacter';
+		else replyContainer.classList = 'replyContainer';
 
-	const dialogueContainer = document.createElement('div');
-	dialogueContainer.classList = 'dialogueContainer';
-	const name = document.createElement('span');
-	name.classList = 'name';
-	if (jurorName === 'foreman') name.innerHTML = 'Foreman';
-	else name.innerHTML = 'Juror #' + jurorName.substring(5, jurorName.length);
-	const textBox = document.createElement('span');
-	textBox.classList = 'textBox';
-	textBox.innerHTML = message;
+		const profile = document.createElement('div');
+		profile.classList = 'profile';
+		const profileImage = document.createElement('img');
+		profileImage.src = `./assets/${jurorName}.png`;
 
-	// append to replyContainer
-	dialogueContainer.append(name, textBox);
-	profile.append(profileImage);
+		const dialogueContainer = document.createElement('div');
+		dialogueContainer.classList = 'dialogueContainer';
+		const name = document.createElement('span');
+		name.classList = 'name';
+		if (jurorName === 'foreman') name.innerHTML = 'Foreman';
+		else name.innerHTML = 'Juror #' + jurorName.substring(5, jurorName.length);
+		const textBox = document.createElement('span');
+		textBox.classList = 'textBox';
+		for (const [i, slicedMessage] of message.split('*').entries()) {
+			const span = document.createElement('span');
+			span.innerHTML = slicedMessage.trim();
+			if (i % 2 === 1) span.style.fontStyle = 'italic';
+			textBox.append(span);
+		}
 
-	replyContainer.append(profile, dialogueContainer);
+		// append to replyContainer
+		dialogueContainer.append(name, textBox);
+		profile.append(profileImage);
 
-	// append to the chatContainer
-	document.getElementById('chatContainer').append(replyContainer);
+		replyContainer.append(profile, dialogueContainer);
+
+		// append to the chatContainer
+		document.getElementById('chatContainer').append(replyContainer);
+	}
 }
 
 function loadDialogue() {
