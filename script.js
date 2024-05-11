@@ -12,7 +12,7 @@ async function fetchChat() {
 		});
 
 	activeChatJson = CHAT_JSON;
-	loadDialogue();
+	loadDialogueStage();
 }
 fetchChat();
 
@@ -22,9 +22,9 @@ function createHTMLDialogue(jurorName, message) {
 	if (jurorName === 'narrator') {
 		// create
 		const narratorContainer = document.createElement('div');
-		narratorContainer.classList = 'narratorContainer';
+		narratorContainer.className = 'narratorContainer';
 		const textBox = document.createElement('span');
-		textBox.classList = 'textBox';
+		textBox.className = 'textBox';
 		textBox.innerHTML = message;
 
 		// append to chatContainer
@@ -33,22 +33,22 @@ function createHTMLDialogue(jurorName, message) {
 	} else {
 		// create
 		const replyContainer = document.createElement('div');
-		if (jurorName.charAt(5) === '8') replyContainer.classList = 'replyContainer mainCharacter';
-		else replyContainer.classList = 'replyContainer';
+		if (jurorName.charAt(5) === '8') replyContainer.className = 'replyContainer mainCharacter';
+		else replyContainer.className = 'replyContainer';
 
 		const profile = document.createElement('div');
-		profile.classList = 'profile';
+		profile.className = 'profile';
 		const profileImage = document.createElement('img');
 		profileImage.src = `./assets/${jurorName}.png`;
 
 		const dialogueContainer = document.createElement('div');
-		dialogueContainer.classList = 'dialogueContainer';
+		dialogueContainer.className = 'dialogueContainer';
 		const name = document.createElement('span');
-		name.classList = 'name';
+		name.className = 'name';
 		if (jurorName === 'foreman') name.innerHTML = 'Foreman';
 		else name.innerHTML = 'Juror #' + jurorName.substring(5, jurorName.length);
 		const textBox = document.createElement('span');
-		textBox.classList = 'textBox';
+		textBox.className = 'textBox';
 		for (const [i, slicedMessage] of message.split('*').entries()) {
 			const span = document.createElement('span');
 			span.innerHTML = slicedMessage.trim();
@@ -67,10 +67,38 @@ function createHTMLDialogue(jurorName, message) {
 	}
 }
 
-function loadDialogue() {
+function loadDialogueStage() {
+	// dialogues
 	for (const dialogue of activeChatJson.chatHistory) {
 		setTimeout(() => {
 			createHTMLDialogue(dialogue.sender, dialogue.message);
-		}, dialogue.timestamp * 1000);
+		}, dialogue.delay * 1000);
 	}
+
+	// MC replies
+	setTimeout(() => {
+		for (const [i, reply] of activeChatJson.chatBar.replies.entries()) {
+			const div = document.createElement('div');
+			div.className = 'select';
+			div.innerHTML = reply.message;
+			div.dataset.replyId = i;
+
+			document.getElementById('replyBar').append(div);
+		}
+
+		document.getElementById('chatScrollBox').className = '';
+	}, activeChatJson.chatBar.delay * 1000);
 }
+
+document.getElementById('replyBar').addEventListener('click', function (event) {
+	if (event.target.className === 'select') {
+		console.log(event);
+		console.log(event.target.dataset.replyId);
+
+		document.getElementById('replyBar').innerHTML = '';
+		document.getElementById('chatScrollBox').className = 'hidReplyBar';
+
+		activeChatJson = activeChatJson.chatBar.replies[event.target.dataset.replyId].outcome;
+		loadDialogueStage();
+	}
+});

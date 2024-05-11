@@ -47,12 +47,18 @@ body {
 	background-color: #eef;
 	border-radius: 1rem;
 
+	transition: 0.3s;
+
 	overflow-y: auto;
 	scrollbar-width: none; /* firefox */
 	-ms-overflow-style: none; /* ie10+ */
 }
 #chatScrollBox::-webkit-scrollbar {
 	display: none; /* safari & chrome */
+}
+#chatScrollBox.hidReplyBar {
+	height: calc(100vh - 3rem);
+	border-radius: 1rem 1rem 0 0;
 }
 #chatContainer {
 	display: flex;

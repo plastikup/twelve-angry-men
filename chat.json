@@ -3,38 +3,75 @@
 		{
 			"sender": "foreman",
 			"message": "ayo?",
-			"timestamp": "0"
+			"delay": "0"
 		},
 		{
 			"sender": "juror8",
 			"message": "heyyy",
-			"timestamp": "0.5"
+			"delay": "0.5"
 		},
 		{
 			"sender": "narrator",
 			"message": "light closes",
-			"timestamp": "0.75"
+			"delay": "0.75"
 		},
 		{
 			"sender": "juror12",
 			"message": "yoooo *coughs* oops",
-			"timestamp": "1"
+			"delay": "1"
 		}
 	],
-	"chatBar": [
-		{
-			"message": "hey hru?",
-			"outcome": {
-				"chatHistory": [],
-				"chatBar": []
+	"chatBar": {
+		"delay": "2",
+		"replies": [
+			{
+				"message": "hey hru?",
+				"outcome": {
+					"chatHistory": [
+						{
+							"sender": "foreman",
+							"message": "first outcome",
+							"delay": "0"
+						}
+					],
+					"chatBar": {
+                        "delay": 2,
+                        "replies": [
+                            {
+                                "message": "hey hru?",
+                                "outcome": {
+                                    "chatHistory": [],
+                                    "chatBar": []
+                                }
+                            }
+                        ]
+                    }
+				}
+			},
+			{
+				"message": "hey hru?",
+				"outcome": {
+					"chatHistory": [
+						{
+							"sender": "foreman",
+							"message": "second outcome",
+							"delay": "0"
+						}
+					],
+					"chatBar": {
+                        "delay": 2,
+                        "replies": [
+                            {
+                                "message": "hey hru?",
+                                "outcome": {
+                                    "chatHistory": [],
+                                    "chatBar": []
+                                }
+                            }
+                        ]
+                    }
+				}
 			}
-		},
-		{
-			"message": "hey hru?",
-			"outcome": {
-				"chatHistory": [],
-				"chatBar": []
-			}
-		}
-	]
+		]
+	}
 }
