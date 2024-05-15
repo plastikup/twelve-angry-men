@@ -3,41 +3,106 @@
 		{
 			"sender": "narrator",
 			"message": "The play starts at the discussion between juror 4, 5 and 10 about poor people.",
-			"delay": "1"
+			"delay": 1
 		},
 		{
 			"sender": "juror4",
 			"message": "I think we're missing the point here. This boy, let's say he's a product of a filthy neighborhood and a broken home [...] He was born in a slum. Slums are breeding grounds for criminals. I know it. So do you. It's no secret. Children from slum backgrounds are potential menaces to society. Now I think-",
-			"delay": "2"
-		},
-		{
-			"sender": "juror10",
-			"message": "[*interrupting*] Brother, you can say that again. The kids who crawl outa those places are real trash. I don't want any part of them, I'm telling you.",
-			"delay": "4"
+			"delay": 2
 		}
 	],
 	"chatBar": {
-		"delay": "5",
-		"title": "Should a juror take all of that personally?",
+		"delay": 3,
+		"title": "Should Juror #10 escalate the situation?",
 		"replies": [
 			{
-				"message": "Yes",
+				"message": "Why yes!",
 				"outcome": {
 					"chatHistory": [
 						{
-							"sender": "foreman",
-							"message": "first outcome",
-							"delay": "0"
+							"sender": "juror10",
+							"message": "[*interrupting*] Brother, you can say that again. The kids who crawl outa those places are real trash. I don't want any part of them, I'm telling you.",
+							"delay": 0
 						}
 					],
 					"chatBar": {
-						"delay": 2,
+						"delay": 1,
+						"title": "Should Juror #5 feel personally attacked?",
 						"replies": [
 							{
-								"message": "hey hru?",
+								"message": "Absolutely! smh",
 								"outcome": {
-									"chatHistory": [],
+									"chatHistory": [
+										{
+											"sender": "juror5",
+											"message": "[*rising*] I've lived in a slum all my life. I nurse that trash in Harlem Hospital six nights a week.",
+											"delay": 0
+										},
+										{
+											"sender": "juror10",
+											"message": "Oh, now wait a second...",
+											"delay": 0.5
+										},
+										{
+											"sender": "juror5",
+											"message": "I used to play in a backyard that was filled with garbage. Maybe it still smells on me.",
+											"delay": 1
+										},
+										{
+											"sender": "juror10",
+											"message": "[*his anger rising*] Now listen, buddy.",
+											"delay": 1.5
+										},
+										{
+											"sender": "foreman",
+											"message": "[*his anger rising*] Now let's be reasonable. There's nothing personal...",
+											"delay": 2
+										},
+										{
+											"sender": "juror5",
+											"message": "[*loudly*] There is something personal!",
+											"delay": 2.5
+										}
+									],
 									"chatBar": []
+								}
+							},
+							{
+								"message": "Thank you, next. He's a rich guy like the others",
+								"outcome": {
+									"chatHistory": [
+										{
+											"sender": "juror5",
+											"message": "I've hated slums all my life. I may even still smell garbages on me.",
+											"delay": 0
+										},
+										{
+											"sender": "juror4",
+											"message": "I'm telling you, he's a menace to us. Broken people like him do not have a heart. You would have to be brain dead like a sloth to believe he's innocent.",
+											"delay": 1
+										},
+										{
+											"sender": "narrator",
+											"message": "The hateful discussion goes on and on, until a vote has been suddenly called.",
+											"delay": 3
+										},
+										{
+											"sender": "narrator",
+											"message": "The vote is unanimous; the boy is voted \"guilty\" 12 to 0 without any hesitation. All jurors clearly have strong hate and wrong stereotypes against slums and filthy neighborhoods.",
+											"delay": 4
+										},
+										{
+											"sender": "narrator",
+											"message": "Curtain and dimming lights thus announce the unfortunate end of this story.",
+											"delay": 5
+										},
+										{
+											"sender": "narrator",
+											"message": "THE END",
+											"delay": 7
+										}
+									],
+									"chatBar": {}
 								}
 							}
 						]
@@ -45,27 +110,31 @@
 				}
 			},
 			{
-				"message": "No",
+				"message": "Ew no!",
 				"outcome": {
 					"chatHistory": [
 						{
-							"sender": "foreman",
-							"message": "second outcome",
-							"delay": "0"
+							"sender": "juror5",
+							"message": "Irrelevant. Who told you you choose where you get born? Moreover, being from a slum does not make you a murderer - you gotta understand that.",
+							"delay": 0
+						},
+						{
+							"sender": "narrator",
+							"message": "Surprisingly, Juror #10 kept his calm for the first time in this conversation, and is going to stay on track until the end of the story.",
+							"delay": 2
+						},
+						{
+							"sender": "narrator",
+							"message": "With his out of the ordinary coordination, the jury arrived easily to a clear consensus of \"not guilty\" without breaking anybody's hand, anybody's back, anybody's head.",
+							"delay": 3
+						},
+						{
+							"sender": "narrator",
+							"message": "THE END",
+							"delay": 4
 						}
 					],
-					"chatBar": {
-						"delay": 2,
-						"replies": [
-							{
-								"message": "hey hru?",
-								"outcome": {
-									"chatHistory": [],
-									"chatBar": []
-								}
-							}
-						]
-					}
+					"chatBar": {}
 				}
 			}
 		]

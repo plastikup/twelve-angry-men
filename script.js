@@ -1,3 +1,4 @@
+console.clear();
 let CHAT_JSON, activeChatJson;
 
 async function fetchChat() {
@@ -12,6 +13,7 @@ async function fetchChat() {
 		});
 
 	activeChatJson = CHAT_JSON;
+	//activeChatJson = CHAT_JSON.chatBar.replies[1].outcome;
 	loadDialogueStage();
 }
 fetchChat();
@@ -76,31 +78,34 @@ function loadDialogueStage() {
 	}
 
 	// MC replies
-	setTimeout(() => {
-		const title = document.createElement('h4');
-		title.className = 'selectTitle';
-		title.innerHTML = activeChatJson.chatBar.title;
-		document.getElementById('replyBar').append(title);
+	if (typeof activeChatJson.chatBar.delay === 'number') {
+		setTimeout(() => {
+			const title = document.createElement('h4');
+			title.id = 'selectTitle';
+			title.innerHTML = activeChatJson.chatBar.title;
+			document.getElementById('replyBar').append(title);
 
-		for (const [i, reply] of activeChatJson.chatBar.replies.entries()) {
-			const div = document.createElement('div');
-			div.className = 'select';
-			div.innerHTML = reply.message;
-			div.dataset.replyId = i;
+			for (const [i, reply] of activeChatJson.chatBar.replies.entries()) {
+				const div = document.createElement('div');
+				div.className = 'select';
+				div.innerHTML = reply.message;
+				div.dataset.replyId = i;
 
-			document.getElementById('replyOptions').append(div);
-		}
+				console.log(div);
+				document.getElementById('replyOptions').append(div);
+			}
 
-		document.getElementById('chatScrollBox').className = '';
-	}, activeChatJson.chatBar.delay * 1000);
+			document.getElementById('chatScrollBox').className = '';
+		}, activeChatJson.chatBar.delay * 1000);
+	}
 }
 
-document.getElementById('replyBar').addEventListener('click', function (event) {
+document.getElementById('replyOptions').addEventListener('click', function (event) {
 	if (event.target.className === 'select') {
 		console.log(event);
-		console.log(event.target.dataset.replyId);
 
-		document.getElementById('replyBar').innerHTML = '';
+		document.getElementById('selectTitle').remove();
+		document.getElementById('replyOptions').innerHTML = '';
 		document.getElementById('chatScrollBox').className = 'hidReplyBar';
 
 		activeChatJson = activeChatJson.chatBar.replies[event.target.dataset.replyId].outcome;

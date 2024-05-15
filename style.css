@@ -120,6 +120,7 @@ body {
 	margin: 0 auto;
 	font-style: italic;
 	font-size: 0.75rem;
+	text-align: center;
 }
 
 /* REPLY BAR */
@@ -142,7 +143,8 @@ body {
 
 	width: 100%;
 }
-.selectTitle {
+#selectTitle {
+	text-align: center;
 	margin: 0;
 }
 .select {
