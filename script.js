@@ -77,13 +77,18 @@ function loadDialogueStage() {
 
 	// MC replies
 	setTimeout(() => {
+		const title = document.createElement('h4');
+		title.className = 'selectTitle';
+		title.innerHTML = activeChatJson.chatBar.title;
+		document.getElementById('replyBar').append(title);
+
 		for (const [i, reply] of activeChatJson.chatBar.replies.entries()) {
 			const div = document.createElement('div');
 			div.className = 'select';
 			div.innerHTML = reply.message;
 			div.dataset.replyId = i;
 
-			document.getElementById('replyBar').append(div);
+			document.getElementById('replyOptions').append(div);
 		}
 
 		document.getElementById('chatScrollBox').className = '';

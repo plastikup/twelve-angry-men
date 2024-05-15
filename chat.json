@@ -1,31 +1,27 @@
 {
 	"chatHistory": [
 		{
-			"sender": "foreman",
-			"message": "ayo?",
-			"delay": "0"
-		},
-		{
-			"sender": "juror8",
-			"message": "heyyy",
-			"delay": "0.5"
-		},
-		{
 			"sender": "narrator",
-			"message": "light closes",
-			"delay": "0.75"
+			"message": "The play starts at the discussion between juror 4, 5 and 10 about poor people.",
+			"delay": "1"
 		},
 		{
-			"sender": "juror12",
-			"message": "yoooo *coughs* oops",
-			"delay": "1"
+			"sender": "juror4",
+			"message": "I think we're missing the point here. This boy, let's say he's a product of a filthy neighborhood and a broken home [...] He was born in a slum. Slums are breeding grounds for criminals. I know it. So do you. It's no secret. Children from slum backgrounds are potential menaces to society. Now I think-",
+			"delay": "2"
+		},
+		{
+			"sender": "juror10",
+			"message": "[*interrupting*] Brother, you can say that again. The kids who crawl outa those places are real trash. I don't want any part of them, I'm telling you.",
+			"delay": "4"
 		}
 	],
 	"chatBar": {
-		"delay": "2",
+		"delay": "5",
+		"title": "Should a juror take all of that personally?",
 		"replies": [
 			{
-				"message": "hey hru?",
+				"message": "Yes",
 				"outcome": {
 					"chatHistory": [
 						{
@@ -35,21 +31,21 @@
 						}
 					],
 					"chatBar": {
-                        "delay": 2,
-                        "replies": [
-                            {
-                                "message": "hey hru?",
-                                "outcome": {
-                                    "chatHistory": [],
-                                    "chatBar": []
-                                }
-                            }
-                        ]
-                    }
+						"delay": 2,
+						"replies": [
+							{
+								"message": "hey hru?",
+								"outcome": {
+									"chatHistory": [],
+									"chatBar": []
+								}
+							}
+						]
+					}
 				}
 			},
 			{
-				"message": "hey hru?",
+				"message": "No",
 				"outcome": {
 					"chatHistory": [
 						{
@@ -59,17 +55,17 @@
 						}
 					],
 					"chatBar": {
-                        "delay": 2,
-                        "replies": [
-                            {
-                                "message": "hey hru?",
-                                "outcome": {
-                                    "chatHistory": [],
-                                    "chatBar": []
-                                }
-                            }
-                        ]
-                    }
+						"delay": 2,
+						"replies": [
+							{
+								"message": "hey hru?",
+								"outcome": {
+									"chatHistory": [],
+									"chatBar": []
+								}
+							}
+						]
+					}
 				}
 			}
 		]
