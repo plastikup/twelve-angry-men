@@ -13,7 +13,7 @@ async function fetchChat() {
 		});
 
 	activeChatJson = CHAT_JSON;
-	//activeChatJson = CHAT_JSON.chatBar.replies[1].outcome;
+	//activeChatJson = CHAT_JSON.chatBar.replies[0].outcome.chatBar.replies[0].outcome.chatBar.replies[1].outcome;
 	loadDialogueStage();
 }
 fetchChat();
@@ -35,8 +35,9 @@ function createHTMLDialogue(jurorName, message) {
 	} else {
 		// create
 		const replyContainer = document.createElement('div');
-		if (jurorName.charAt(5) === '8') replyContainer.className = 'replyContainer mainCharacter';
-		else replyContainer.className = 'replyContainer';
+		//if (jurorName.charAt(5) === '8') replyContainer.className = 'replyContainer mainCharacter';
+		//else replyContainer.className = 'replyContainer';
+		replyContainer.className = 'replyContainer';
 
 		const profile = document.createElement('div');
 		profile.className = 'profile';
