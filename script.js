@@ -23,7 +23,8 @@ async function fetchChat() {
 		});
 
 	//activeChatJson = CHAT_JSON;
-	activeChatJson = CHAT_JSON.chatBar.replies[0].outcome.chatBar.replies[0].outcome.chatBar.replies[1].outcome.chatBar.replies[2].outcome;
+	activeChatJson = CHAT_JSON;
+	//activeChatJson = CHAT_JSON.chatBar.replies[0].outcome.chatBar.replies[0].outcome.chatBar.replies[1].outcome.chatBar.replies[2].outcome;
 	loadDialogueStage();
 }
 fetchChat();
