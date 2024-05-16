@@ -6,10 +6,245 @@
 			"delay": 0
 		},
 		{
-			"sender": "juror4",
-			"message": "I think we're missing the point here. This boy, let's say he's a product of a filthy neighborhood and a broken home [...] He was born in a slum. Slums are breeding grounds for criminals. I know it. So do you. It's no secret. Children from slum backgrounds are potential menaces to society. Now I think-",
-			"delay": 2
+			"sender": "narrator",
+			"message": "The same. Immediately following. The jurors are in the same positions as they were at the end of the previous act, looking at the 3rd juror. There is silence. The 3rd juror crosses to the window. The other jurors move about the room. The 3rd juror observes the exterior.",
+			"delay": 1
 		}
 	],
-	"chatBar": {}
+	"chatBar": {
+		"delay": 3,
+		"title": "What does the juror #3 see?",
+		"replies": [
+			{
+				"message": "A sunny, hot sky",
+				"outcome": {
+					"chatHistory": [
+						{
+							"sender": "narrator",
+							"message": "Another vote took place. 6 to 6. The room is getting hotter and hotter. Intense music plays.",
+							"delay": 0
+						},
+						{
+							"sender": "juror10",
+							"message": "Y'all, shut your useless mouths and listen to me. I think we should just quit.",
+							"delay": 2
+						},
+						{
+							"sender": "juror3",
+							"message": "What the hell are you talking about?",
+							"delay": 3
+						},
+						{
+							"sender": "juror10",
+							"message": "We've been stuck here for the last 3 hours and there are no signs that we will get the hell out of here in the forseeable future. For Christ's sake, let's tell the Judge we're a hung jury.",
+							"delay": 4
+						},
+						{
+							"sender": "juror3",
+							"message": "Tell me you're out of your mind. We've done so much to end up with a hung jury?",
+							"delay": 5
+						},
+						{
+							"sender": "juror10",
+							"message": "We'll be here all night, Jesus Christ! I mean, what am I gonna do, shove myself to the grave over this little pointless murder?",
+							"delay": 6
+						},
+						{
+							"sender": "narrator",
+							"message": "The conflict persists for a while. The jurors are unable to handle the conflict that was caused, and agrees impulsively for a hung jury",
+							"delay": 8
+						},
+						{
+							"sender": "narrator",
+							"message": "THE END",
+							"delay": 10
+						}
+					],
+					"chatBar": {}
+				}
+			},
+			{
+				"message": "A dark, cold sky",
+				"outcome": {
+					"chatHistory": [
+						{
+							"sender": "narrator",
+							"message": "Another vote took place. 6 to 6. The room is getting hotter and hotter. Intense music plays.",
+							"delay": 0
+						},
+						{
+							"sender": "juror10",
+							"message": "Y'all, shut your useless mouths and listen to me. I think we should just quit.",
+							"delay": 2
+						},
+						{
+							"sender": "juror3",
+							"message": "What the hell are you talking about?",
+							"delay": 3
+						},
+						{
+							"sender": "juror10",
+							"message": "We've been stuck here for the last 3 hours and there are no signs that we will get the hell out of here in the forseeable future. For Christ's sake, let's tell the Judge we're a hung jury.",
+							"delay": 4
+						},
+						{
+							"sender": "juror3",
+							"message": "We've done so much to end up with a hung jury? Go to hell, this is the most ridiculous thing I ever... You took an oath in the courtroom. You can't just quit.",
+							"delay": 5
+						},
+						{
+							"sender": "juror10",
+							"message": "Why not?",
+							"delay": 6
+						},
+						{
+							"sender": "juror8",
+							"message": "I don't think the court will accept a hung jury. We haven't been here very long.",
+							"delay": 7
+						},
+						{
+							"sender": "juror7",
+							"message": "Listen, this kid wouldn't stand a chance with another jury and you know it. Come on, we're hung. Let's take it inside.",
+							"delay": 8
+						},
+						{
+							"sender": "juror5",
+							"message": "You still don't think there's any room for reasonable doubt?",
+							"delay": 9
+						},
+						{
+							"sender": "juror7",
+							"message": "No, I don't.",
+							"delay": 10
+						},
+						{
+							"sender": "juror11",
+							"message": "Pardon. Maybe you don't fully understand the term \"reasonable doubt\".",
+							"delay": 11
+						},
+						{
+							"sender": "juror7",
+							"message": "What d'ya mean, I don't understand it? Who the hell are you to talk to me like that? [*To the others*] He comes over to this country running for his life and before he can even take a big breath he's telling us how to run the show. The arrogance of the guy!",
+							"delay": 12
+						}
+					],
+					"chatBar": {
+						"delay": 14,
+						"title": "Should juror #5 defend juror #11?",
+						"replies": [
+							{
+								"message": "Why yes!",
+								"outcome": {
+									"chatHistory": [
+										{
+											"sender": "juror5",
+											"message": "You mean you're calling him arrogant because he wasn't born here? Well, I'm calling you arrogant because you were. How's that?",
+											"delay": 0
+										},
+										{
+											"sender": "narrator",
+											"message": "Cutscene. Juror #7 is sick of all of this.",
+											"delay": 2
+										},
+										{
+											"sender": "juror7",
+											"message": "Listen. I'll tell you something. I'm a little sick of this whole thing already. All this yakkin's gettin' nowhere so I'm going to break it up here. I'm changing my vote to \"not guilty\". I've had enough.",
+											"delay": 4
+										},
+										{
+											"sender": "juror3",
+											"message": "What d'you mean - you've had enough? That's no answer.",
+											"delay": 5
+										},
+										{
+											"sender": "juror11",
+											"message": "He's right. That is not an answer. What kind of man are you? You have sat here and voted guilty with everyone else because there are some baseball tickets burning a hole in your pocket. Now you changed your vote because you say you're sick of all the talking here.",
+											"delay": 6
+										}
+									],
+									"chatBar": {
+										"delay": 8,
+										"title": "You have the power to cancel the baseball game - would you do it?",
+										"replies": [
+											{
+												"message": "Of course!",
+												"outcome": {
+                                                    "chatHistory": [
+                                                        {
+                                                            "sender": "narrator",
+                                                            "message": "As excepted, upon he received the news, juror #7 is instantly becoming active in the discussions that followed.",
+                                                            "delay": 0
+                                                        },
+                                                        {
+                                                            "sender": "narrator",
+                                                            "message": "The jurors eventually agree on \"not guilty\".",
+                                                            "delay": 1
+                                                        }
+                                                        ,
+                                                        {
+                                                            "sender": "narrator",
+                                                            "message": "THE END",
+                                                            "delay": 3
+                                                        }
+                                                    ],
+                                                    "chatBar": {}
+                                                }
+											},
+                                            {
+												"message": "Definitely not",
+												"outcome": {
+                                                    "chatHistory": [
+                                                        {
+                                                            "sender": "narrator",
+                                                            "message": "Juror #7 continues to act as a jerk, taking decisions that only advantages himself so that he gets out of the jury room as quick as possible",
+                                                            "delay": 0
+                                                        },
+                                                        {
+                                                            "sender": "narrator",
+                                                            "message": "The jurors eventually agree on \"not guilty\", however with great difficulty.",
+                                                            "delay": 1
+                                                        }
+                                                        ,
+                                                        {
+                                                            "sender": "narrator",
+                                                            "message": "THE END",
+                                                            "delay": 3
+                                                        }
+                                                    ],
+                                                    "chatBar": {}
+                                                }
+											}
+										]
+									}
+								}
+							},
+							{
+								"message": "Nahhhh",
+								"outcome": {
+									"chatHistory": [
+										{
+											"sender": "narrator",
+											"message": "The whole jury room is filled with hate. Some jurors, such as jurors #5 and #11, decide to not participate in the conversation.",
+											"delay": 0
+										},
+                                        {
+											"sender": "narrator",
+											"message": "Because of the lack of constructive discussion, the jury is eventually declared hung unfortunately.",
+											"delay": 1
+										},
+                                        {
+											"sender": "narrator",
+											"message": "THE END",
+											"delay": 3
+										}
+									],
+									"chatBar": {}
+								}
+							}
+						]
+					}
+				}
+			}
+		]
+	}
 }

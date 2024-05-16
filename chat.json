@@ -7,7 +7,7 @@
 		},
 		{
 			"sender": "juror4",
-			"message": "I think we're missing the point here. This boy, let's say he's a product of a filthy neighborhood and a broken home [...] He was born in a slum. Slums are breeding grounds for criminals. I know it. So do you. It's no secret. Children from slum backgrounds are potential menaces to society. Now I think-",
+			"message": "I think we're missing the point here. This boy, let's say he's a product of a filthy neighborhood and a broken home. He was born in a slum. Slums are breeding grounds for criminals. I know it. So do you. It's no secret. Children from slum backgrounds are potential menaces to society. Now I think-",
 			"delay": 2
 		}
 	],
@@ -41,81 +41,81 @@
 										{
 											"sender": "juror10",
 											"message": "Oh, now wait a second...",
-											"delay": 0.25
-										},
-										{
-											"sender": "juror5",
-											"message": "I used to play in a backyard that was filled with garbage. Maybe it still smells on me.",
-											"delay": 0.5
-										},
-										{
-											"sender": "juror10",
-											"message": "[*his anger rising*] Now listen, buddy.",
-											"delay": 0.75
-										},
-										{
-											"sender": "foreman",
-											"message": "[*his anger rising*] Now let's be reasonable. There's nothing personal...",
 											"delay": 1
 										},
 										{
 											"sender": "juror5",
-											"message": "[*loudly*] There is something personal!",
-											"delay": 1.25
+											"message": "I used to play in a backyard that was filled with garbage. Maybe it still smells on me.",
+											"delay": 2
 										},
 										{
-											"sender": "juror3",
-											"message": "Come on, now. He didn't mean you, feller. Let's not be so sensitive.",
+											"sender": "juror10",
+											"message": "[*his anger rising*] Now listen, buddy.",
 											"delay": 3
 										},
 										{
 											"sender": "foreman",
+											"message": "[*his anger rising*] Now let's be reasonable. There's nothing personal...",
+											"delay": 4
+										},
+										{
+											"sender": "juror5",
+											"message": "[*loudly*] There is something personal!",
+											"delay": 5
+										},
+										{
+											"sender": "juror3",
+											"message": "Come on, now. He didn't mean you, feller. Let's not be so sensitive.",
+											"delay": 7
+										},
+										{
+											"sender": "foreman",
 											"message": "All right, let's stop all this arguing. We're wasting time here. [*He points to the 8th juror*] It's your turn. Let's go.",
-											"delay": 3.25
+											"delay": 8
 										},
 										{
 											"sender": "juror8",
 											"message": "Well, I didn't expect a turn. I thought you were all supposed to be convincing me. Wasn't that the idea?",
-											"delay": 3.5
+											"delay": 9
 										},
 										{
 											"sender": "foreman",
 											"message": "Check. I forgot that.",
-											"delay": 3.75
+											"delay": 10
 										},
 										{
 											"sender": "juror10",
 											"message": "Well, what's the difference? He's the one who's keeping us here. Let's head what he's got to say.",
-											"delay": 4
+											"delay": 11
 										},
 										{
 											"sender": "foreman",
 											"message": "Now just a second. We decided to do it a certain way. Let's stick to that",
-											"delay": 4.25
+											"delay": 12
 										},
 										{
 											"sender": "juror10",
 											"message": "[*disgusted*] Ah, stop bein' a kid , will you?",
-											"delay": 4.5
+											"delay": 13
 										},
 										{
 											"sender": "foreman",
 											"message": "What, just because I'm trying to keep this thing organized? Listen. [*He rises*]. You want to do it? Here. You sit here. You take the responsibility. I'll just shut up, that's all.",
-											"delay": 4.75
+											"delay": 14
 										},
 										{
 											"sender": "juror10",
 											"message": "Listen, what are you gettin' so hot about? Calm down, will ya?",
-											"delay": 5
+											"delay": 15
 										},
 										{
 											"sender": "foreman",
 											"message": "Don't tell me to calm down. Here! Here's the chair. You keep it goin' smooth and everything. What d'ya think, it's a snap? Come on, Mr. Foreman. Let's see how great you'd run the show.",
-											"delay": 5.25
+											"delay": 16
 										}
 									],
 									"chatBar": {
-										"delay": 7,
+										"delay": 18,
 										"title": "Should Juror #10 take the foreman's seat",
 										"replies": [
 											{
@@ -235,36 +235,36 @@
 																		{
 																			"sender": "narrator",
 																			"message": "The 8th Juror stands for a moment in silence, then he reaches into his pocket and swiftly withdraws a knife. He holds it in front of his face and flicks open the blade, then he leans forward and sticks the knife into the table alongside the other. They are exactly alike. There is a burst of sound in the room.",
-																			"delay": 0
+																			"delay": 2
 																		},
 																		{
 																			"sender": "juror6",
 																			"message": "Look at it! It's the same knife.",
-																			"delay": 0
+																			"delay": 4
 																		},
 																		{
 																			"sender": "juror4",
 																			"message": "Where d'you get that knife?",
-																			"delay": 0
+																			"delay": 5
 																		},
 																		{
 																			"sender": "juror8",
 																			"message": "I was walking for a couple of hours last night, just thinking. I walked through the boy's neighborhood. The knife comes from a little pawnshop three blocks from his house. It cost six dollars.",
-																			"delay": 0
+																			"delay": 6
 																		},
 																		{
 																			"sender": "narrator",
 																			"message": "Cutscene.",
-																			"delay": 0
+																			"delay": 8
 																		},
 																		{
 																			"sender": "juror4",
 																			"message": "One second. About what the old man testified - is it really realistic he raced from his bedroom to the hallway to catch the killer?",
-																			"delay": 0
+																			"delay": 10
 																		}
 																	],
 																	"chatBar": {
-																		"delay": 0,
+																		"delay": 12,
 																		"title": "Is it realistic?",
 																		"replies": [
 																			{
@@ -382,7 +382,7 @@
 																		},
 																		{
 																			"sender": "narrator",
-																			"message": "Both parties are clashing violently with their position on the situation. Juror #3 and #10 are throwing lots of insults, with little to no arguments. Slowly, the jurors became more and more convinced by juror #8's reasoning. Losing hope, juror #3 and #10 gave up. A final agreement took place and the ultimate verdict is \"not guilty\".",
+																			"message": "Both parties are clashing violently hoping to prevail over the other group with their position on the situation. Juror #3 and #10 are throwing lots of insults, with little to no arguments. Slowly, the jurors became more and more convinced by juror #8's reasoning. Losing hope, juror #3 and #10 gave up. A final agreement took place and the ultimate verdict is \"not guilty\".",
 																			"delay": 1
 																		},
 																		{

@@ -22,8 +22,8 @@ async function fetchChat() {
 			console.error('Error loading levels JSON #2:', error);
 		});
 
-	//activeChatJson = CHAT_JSON;
 	activeChatJson = CHAT_JSON;
+	//activeChatJson = CHAT_JSON_2
 	//activeChatJson = CHAT_JSON.chatBar.replies[0].outcome.chatBar.replies[0].outcome.chatBar.replies[1].outcome.chatBar.replies[2].outcome;
 	loadDialogueStage();
 }
