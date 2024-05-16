@@ -92,7 +92,7 @@ function loadDialogueStage() {
 	}
 
 	// MC replies
-	if (typeof activeChatJson.portal.delay === 'number'){
+	if (typeof activeChatJson.portal?.delay === 'number'){
 		setTimeout(() => {
 			activeChatJson = CHAT_JSON_2;
 			loadDialogueStage();
