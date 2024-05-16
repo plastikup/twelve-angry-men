@@ -13,7 +13,7 @@ async function fetchChat() {
 		});
 
 	activeChatJson = CHAT_JSON;
-	//activeChatJson = CHAT_JSON.chatBar.replies[0].outcome.chatBar.replies[0].outcome.chatBar.replies[1].outcome;
+	//activeChatJson = CHAT_JSON.chatBar.replies[0].outcome.chatBar.replies[0].outcome;
 	loadDialogueStage();
 }
 fetchChat();
@@ -68,6 +68,8 @@ function createHTMLDialogue(jurorName, message) {
 		// append to the chatContainer
 		document.getElementById('chatContainer').append(replyContainer);
 	}
+
+	document.getElementById('chatScrollBox').scrollTo(0, document.getElementById('chatScrollBox').scrollHeight);
 }
 
 function loadDialogueStage() {

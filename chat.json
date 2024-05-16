@@ -41,114 +41,223 @@
 										{
 											"sender": "juror10",
 											"message": "Oh, now wait a second...",
-											"delay": 0.5
+											"delay": 0.25
 										},
 										{
 											"sender": "juror5",
 											"message": "I used to play in a backyard that was filled with garbage. Maybe it still smells on me.",
-											"delay": 1
+											"delay": 0.5
 										},
 										{
 											"sender": "juror10",
 											"message": "[*his anger rising*] Now listen, buddy.",
-											"delay": 1.5
+											"delay": 0.75
 										},
 										{
 											"sender": "foreman",
 											"message": "[*his anger rising*] Now let's be reasonable. There's nothing personal...",
-											"delay": 2
+											"delay": 1
 										},
 										{
 											"sender": "juror5",
 											"message": "[*loudly*] There is something personal!",
-											"delay": 2.5
+											"delay": 1.25
 										},
 										{
-											"sender": "narrator",
-											"message": "Cutscene. Juror #4 and #8 are arguing about the unique knife.",
-											"delay": 4.5
+											"sender": "juror3",
+											"message": "Come on, now. He didn't mean you, feller. Let's not be so sensitive.",
+											"delay": 3
 										},
 										{
-											"sender": "juror4",
-											"message": "Take a look at that knife. I've never seen one like it. Neither had the storekeeper who sold it to the boy. Aren't you asking us to accept a pretty incredible coincidence?",
-											"delay": 6
+											"sender": "foreman",
+											"message": "All right, let's stop all this arguing. We're wasting time here. [*He points to the 8th juror*] It's your turn. Let's go.",
+											"delay": 3.25
 										},
 										{
 											"sender": "juror8",
-											"message": "I'm not asking anyone to accept it. I'm just saying that it's possible.",
-											"delay": 7
+											"message": "Well, I didn't expect a turn. I thought you were all supposed to be convincing me. Wasn't that the idea?",
+											"delay": 3.5
+										},
+										{
+											"sender": "foreman",
+											"message": "Check. I forgot that.",
+											"delay": 3.75
+										},
+										{
+											"sender": "juror10",
+											"message": "Well, what's the difference? He's the one who's keeping us here. Let's head what he's got to say.",
+											"delay": 4
+										},
+										{
+											"sender": "foreman",
+											"message": "Now just a second. We decided to do it a certain way. Let's stick to that",
+											"delay": 4.25
+										},
+										{
+											"sender": "juror10",
+											"message": "[*disgusted*] Ah, stop bein' a kid , will you?",
+											"delay": 4.5
+										},
+										{
+											"sender": "foreman",
+											"message": "What, just because I'm trying to keep this thing organized? Listen. [*He rises*]. You want to do it? Here. You sit here. You take the responsibility. I'll just shut up, that's all.",
+											"delay": 4.75
+										},
+										{
+											"sender": "juror10",
+											"message": "Listen, what are you gettin' so hot about? Calm down, will ya?",
+											"delay": 5
+										},
+										{
+											"sender": "foreman",
+											"message": "Don't tell me to calm down. Here! Here's the chair. You keep it goin' smooth and everything. What d'ya think, it's a snap? Come on, Mr. Foreman. Let's see how great you'd run the show.",
+											"delay": 5.25
 										}
 									],
 									"chatBar": {
-										"delay": 8,
-										"title": "Where has been Juror #8 last night?",
+										"delay": 7,
+										"title": "Should Juror #10 take the foreman's seat",
 										"replies": [
 											{
-												"message": "Home; he was sick",
+												"message": "YEAH!!",
 												"outcome": {
 													"chatHistory": [
 														{
-															"sender": "juror3",
-															"message": "[*shouting*] And I'm saying it's not possible!",
+															"sender": "juror10",
+															"message": "Bet?",
 															"delay": 0
 														},
 														{
-															"sender": "juror8",
-															"message": "[*remains silent*]",
-															"delay": 1
-														},
-														{
-															"sender": "juror3",
-															"message": "Got any proofs? No? Boom. Overruled. Exit's right behind your back. You're welcome.",
+															"sender": "narrator",
+															"message": "Juror10 becomes the new Foreman.",
 															"delay": 2
 														},
 														{
 															"sender": "narrator",
-															"message": "Juror #8 remains silent after this terrific interaction, and well until the end of the jury. The rest of the jurors believe the boy is guilty because of the unique knife, and are not open to think there may be alike switchblades elsewhere.",
+															"message": "The entire rest of the discussion is one sided in favor of guilty, given the new Foreman's character of not letting people express themselves.",
+															"delay": 3
+														},
+														{
+															"sender": "narrator",
+															"message": "Cutscene. Vote has been requested. \"Guilty\" 12 to 0.",
 															"delay": 4
 														},
 														{
 															"sender": "narrator",
-															"message": "The vote has been called. \"Guilty\" 12 to 0. Consensus has thus been decided.",
-															"delay": 5
-														},
-														{
-															"sender": "narrator",
 															"message": "THE END",
-															"delay": 6
+															"delay": 5
 														}
 													],
 													"chatBar": {}
 												}
 											},
 											{
-												"message": "To the pawnshop; buying cigarettes",
+												"message": "NAH BRO",
 												"outcome": {
 													"chatHistory": [
 														{
-															"sender": "juror3",
-															"message": "[*shouting*] And I'm saying it's not possible!",
+															"sender": "narrator",
+															"message": "Cutscene. Juror #4 and #8 are arguing about the unique knife.",
 															"delay": 0
 														},
 														{
-															"sender": "narrator",
-															"message": "The 8th Juror stands for a moment in silence, then he reaches into his pocket and swiftly withdraws a knife. He holds it in front of his face and flicks open the blade, then he leans forward and sticks the knife into the table alongside the other. They are exactly alike. There is a burst of sound in the room.",
-															"delay": 0
+															"sender": "juror4",
+															"message": "Take a look at that knife. I've never seen one like it. Neither had the storekeeper who sold it to the boy. Aren't you asking us to accept a pretty incredible coincidence?",
+															"delay": 2
+														},
+														{
+															"sender": "juror8",
+															"message": "I'm not asking anyone to accept it. I'm just saying that it's possible.",
+															"delay": 3
 														}
 													],
 													"chatBar": {
-														
-														"delay": 0,
-														"title": "abc",
-														"replies": []
-													}
-												}
-											},
-											{
-												"message": "Home; it was raining outside",
-												"outcome": {
-													"chatHistory": [],
-													"chatBar": {
+														"delay": 8,
+														"title": "Where has been Juror #8 last night?",
+														"replies": [
+															{
+																"message": "Home; he was sick",
+																"outcome": {
+																	"chatHistory": [
+																		{
+																			"sender": "juror3",
+																			"message": "[*shouting*] And I'm saying it's not possible!",
+																			"delay": 0
+																		},
+																		{
+																			"sender": "juror8",
+																			"message": "[*remains silent*]",
+																			"delay": 1
+																		},
+																		{
+																			"sender": "juror3",
+																			"message": "Got any proofs? No? Boom. Overruled. Exit's right behind your back. You're welcome.",
+																			"delay": 2
+																		},
+																		{
+																			"sender": "narrator",
+																			"message": "Juror #8 remains silent after this terrific interaction, and well until the end of the jury. The rest of the jurors believe the boy is guilty because of the unique knife, and are not open to think there may be alike switchblades elsewhere.",
+																			"delay": 4
+																		},
+																		{
+																			"sender": "narrator",
+																			"message": "The vote has been called. \"Guilty\" 12 to 0. Consensus has thus been decided.",
+																			"delay": 5
+																		},
+																		{
+																			"sender": "narrator",
+																			"message": "THE END",
+																			"delay": 6
+																		}
+																	],
+																	"chatBar": {}
+																}
+															},
+															{
+																"message": "To the pawnshop; buying cigarettes",
+																"outcome": {
+																	"chatHistory": [
+																		{
+																			"sender": "juror3",
+																			"message": "[*shouting*] And I'm saying it's not possible!",
+																			"delay": 0
+																		},
+																		{
+																			"sender": "narrator",
+																			"message": "The 8th Juror stands for a moment in silence, then he reaches into his pocket and swiftly withdraws a knife. He holds it in front of his face and flicks open the blade, then he leans forward and sticks the knife into the table alongside the other. They are exactly alike. There is a burst of sound in the room.",
+																			"delay": 0
+																		},
+																		{
+																			"sender": "juror6",
+																			"message": "Look at it! It's the same knife.",
+																			"delay": 0
+																		},
+																		{
+																			"sender": "juror4",
+																			"message": "Where d'you get that knife?",
+																			"delay": 0
+																		},
+																		{
+																			"sender": "juror8",
+																			"message": "I was walking for a couple of hours last night, just thinking. I walked through the boy's neighborhood. The knife comes from a little pawnshop three blocks from his house. It cost six dollars.",
+																			"delay": 0
+																		}
+																	],
+																	"chatBar": {
+																		"delay": 0,
+																		"title": "abc",
+																		"replies": []
+																	}
+																}
+															},
+															{
+																"message": "Home; it was raining outside",
+																"outcome": {
+																	"chatHistory": [],
+																	"chatBar": {}
+																}
+															}
+														]
 													}
 												}
 											}
