@@ -124,28 +124,38 @@
 													"chatHistory": [
 														{
 															"sender": "juror10",
-															"message": "Bet?",
+															"message": "Sure thing! Boy, oh, boy, where do I even begin? Move out of your seat, will ya?",
 															"delay": 0
 														},
 														{
-															"sender": "narrator",
-															"message": "Juror10 becomes the new Foreman.",
+															"sender": "juror12",
+															"message": "Oh come on, you've gotta be kidding me, You're not fit for that kind of job.",
+															"delay": 1
+														},
+														{
+															"sender": "juror10",
+															"message": "Ah shut up you bastard! You goddamned ignorant peasants are going to see what I'm capable of!",
 															"delay": 2
 														},
 														{
 															"sender": "narrator",
-															"message": "The entire rest of the discussion is one sided in favor of guilty, given the new Foreman's character of not letting people express themselves.",
-															"delay": 3
-														},
-														{
-															"sender": "narrator",
-															"message": "Cutscene. Vote has been requested. \"Guilty\" 12 to 0.",
+															"message": "Thus juror #10 becomes the new Foreman.",
 															"delay": 4
 														},
 														{
 															"sender": "narrator",
-															"message": "THE END",
+															"message": "The entire rest of the discussion is one sided in favor of guilty, given the new Foreman's character of not letting people express their opinion.",
 															"delay": 5
+														},
+														{
+															"sender": "narrator",
+															"message": "Vote has been quickly requested. \"Guilty\" 12 to 0.",
+															"delay": 6
+														},
+														{
+															"sender": "narrator",
+															"message": "THE END",
+															"delay": 7
 														}
 													],
 													"chatBar": {}
@@ -172,7 +182,7 @@
 														}
 													],
 													"chatBar": {
-														"delay": 8,
+														"delay": 5,
 														"title": "Where has been Juror #8 last night?",
 														"replies": [
 															{
@@ -241,19 +251,146 @@
 																			"sender": "juror8",
 																			"message": "I was walking for a couple of hours last night, just thinking. I walked through the boy's neighborhood. The knife comes from a little pawnshop three blocks from his house. It cost six dollars.",
 																			"delay": 0
+																		},
+																		{
+																			"sender": "narrator",
+																			"message": "Cutscene.",
+																			"delay": 0
+																		},
+																		{
+																			"sender": "juror4",
+																			"message": "One second. About what the old man testified - is it really realistic he raced from his bedroom to the hallway to catch the killer?",
+																			"delay": 0
 																		}
 																	],
 																	"chatBar": {
 																		"delay": 0,
-																		"title": "abc",
-																		"replies": []
+																		"title": "Is it realistic?",
+																		"replies": [
+																			{
+																				"message": "Absolutely! He was an athlete in the past",
+																				"outcome": {
+																					"chatHistory": [
+																						{
+																							"sender": "juror8",
+																							"message": "Yeah, he mentioned he was a athlete in the past. Quite impressive.",
+																							"delay": 0
+																						},
+																						{
+																							"sender": "juror3",
+																							"message": "What you talking about - no one knows that bastard. He's no famous, doesn't have any family, is gonna die in his own corner alone and-",
+																							"delay": 1
+																						},
+																						{
+																							"sender": "juror8",
+																							"message": "I think this is what happened. The old man heard the fight between the boy and his father a few hours earlier. Then, he got up, tried to get to the door, heard someone racing down the stairs, and assumed it was the boy.",
+																							"delay": 2
+																						},
+																						{
+																							"sender": "juror6",
+																							"message": "I think that's possible.",
+																							"delay": 3
+																						},
+																						{
+																							"sender": "juror3",
+																							"message": "Assumed? Now listen to me, you people. I've seen all kinds of dishonesty in my day - but this little display takes the cake. He is clearly a athletic guy and y'all all saw it. Heard it. What's the matter with you people? Every one of you knows this kid is guilty. The man saw him, thus he's got to burn. We're letting him slip through our fingers here.",
+																							"delay": 4
+																						},
+																						{
+																							"sender": "juror8",
+																							"message": "Ever since we walked into this room you've been behaving like a self-appointed public avenger. You want to see this boy die because you personally want it, not because of the facts.",
+																							"delay": 5
+																						},
+																						{
+																							"sender": "juror3",
+																							"message": "Shut up!",
+																							"delay": 6
+																						},
+																						{
+																							"sender": "juror8",
+																							"message": "You're a sadist!",
+																							"delay": 7
+																						},
+																						{
+																							"sender": "juror3",
+																							"message": "Shut up, you son of a bitch!",
+																							"delay": 8
+																						}
+																					],
+																					"portal": {
+																						"delay": 10
+																					}
+																				}
+																			},
+																			{
+																				"message": "Unfortunately not",
+																				"outcome": {
+																					"chatHistory": [
+																						{
+																							"sender": "juror8",
+																							"message": "Not really. I think this is what happened. The old man heard the fight between the boy and his father a few hours earlier. Then, he got up, tried to get to the door, heard someone racing down the stairs, and assumed it was the boy.",
+																							"delay": 0
+																						},
+																						{
+																							"sender": "juror6",
+																							"message": "I think that's possible.",
+																							"delay": 1
+																						},
+																						{
+																							"sender": "juror3",
+																							"message": "Assumed? Now listen to me, you people. I've seen all kinds of dishonesty in my day - but this little display takes the cake. He is clearly a athletic guy and y'all all saw it. Heard it. What's the matter with you people? Every one of you knows this kid is guilty. The man saw him, thus he's got to burn. We're letting him slip through our fingers here.",
+																							"delay": 2
+																						},
+																						{
+																							"sender": "juror8",
+																							"message": "Ever since we walked into this room you've been behaving like a self-appointed public avenger. You want to see this boy die because you personally want it, not because of the facts.",
+																							"delay": 3
+																						},
+																						{
+																							"sender": "juror3",
+																							"message": "Shut up!",
+																							"delay": 4
+																						},
+																						{
+																							"sender": "juror8",
+																							"message": "You're a sadist!",
+																							"delay": 5
+																						},
+																						{
+																							"sender": "juror3",
+																							"message": "Shut up, you son of a bitch!",
+																							"delay": 6
+																						}
+																					],
+																					"portal": {
+																						"delay": 8
+																					}
+																				}
+																			}
+																		]
 																	}
 																}
 															},
 															{
 																"message": "Home; it was raining outside",
 																"outcome": {
-																	"chatHistory": [],
+																	"chatHistory": [
+																		{
+																			"sender": "narrator",
+																			"message": "Another vote took place. 6 to 6. The room is getting darker as the storm approaches with fury. Intense music plays.",
+																			"delay": 0
+																		},
+																		{
+																			"sender": "narrator",
+																			"message": "Both parties are clashing violently with their position on the situation. Juror #3 and #10 are throwing lots of insults, with little to no arguments. Slowly, the jurors became more and more convinced by juror #8's reasoning. Losing hope, juror #3 and #10 gave up. A final agreement took place and the ultimate verdict is \"not guilty\".",
+																			"delay": 1
+																		},
+																		{
+																			"sender": "narrator",
+																			"message": "THE END",
+																			"delay": 3
+																		}
+																	],
 																	"chatBar": {}
 																}
 															}

@@ -1,5 +1,5 @@
 console.clear();
-let CHAT_JSON, activeChatJson;
+let CHAT_JSON, CHAT_JSON_2, activeChatJson;
 
 async function fetchChat() {
 	await fetch('./chat.json')
@@ -12,8 +12,18 @@ async function fetchChat() {
 			console.error('Error loading levels JSON:', error);
 		});
 
-	activeChatJson = CHAT_JSON;
-	//activeChatJson = CHAT_JSON.chatBar.replies[0].outcome.chatBar.replies[0].outcome;
+	await fetch('./chat2.json')
+		.then((res) => res.json())
+		.then((chatFetched) => {
+			CHAT_JSON_2 = chatFetched;
+			console.log(CHAT_JSON_2);
+		})
+		.catch((error) => {
+			console.error('Error loading levels JSON #2:', error);
+		});
+
+	//activeChatJson = CHAT_JSON;
+	activeChatJson = CHAT_JSON.chatBar.replies[0].outcome.chatBar.replies[0].outcome.chatBar.replies[1].outcome.chatBar.replies[2].outcome;
 	loadDialogueStage();
 }
 fetchChat();
@@ -81,7 +91,12 @@ function loadDialogueStage() {
 	}
 
 	// MC replies
-	if (typeof activeChatJson.chatBar.delay === 'number') {
+	if (typeof activeChatJson.portal.delay === 'number'){
+		setTimeout(() => {
+			activeChatJson = CHAT_JSON_2;
+			loadDialogueStage();
+		}, activeChatJson.portal.delay * 1000);
+	} else if (typeof activeChatJson.chatBar.delay === 'number') {
 		setTimeout(() => {
 			const title = document.createElement('h4');
 			title.id = 'selectTitle';

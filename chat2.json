@@ -1,0 +1,15 @@
+{
+	"chatHistory": [
+		{
+			"sender": "narrator",
+			"message": "- Act 2 -",
+			"delay": 0
+		},
+		{
+			"sender": "juror4",
+			"message": "I think we're missing the point here. This boy, let's say he's a product of a filthy neighborhood and a broken home [...] He was born in a slum. Slums are breeding grounds for criminals. I know it. So do you. It's no secret. Children from slum backgrounds are potential menaces to society. Now I think-",
+			"delay": 2
+		}
+	],
+	"chatBar": {}
+}
