@@ -1,5 +1,6 @@
 console.clear();
 let CHAT_JSON, CHAT_JSON_2, activeChatJson;
+window.skipDialogues = false;
 
 async function fetchChat() {
 	await fetch('./chat.json')
@@ -88,7 +89,7 @@ function loadDialogueStage() {
 	for (const dialogue of activeChatJson.chatHistory) {
 		setTimeout(() => {
 			createHTMLDialogue(dialogue.sender, dialogue.message);
-		}, dialogue.delay * 1000);
+		}, dialogue.delay * 1000 * !window.skipDialogues);
 	}
 
 	// MC replies
@@ -96,7 +97,7 @@ function loadDialogueStage() {
 		setTimeout(() => {
 			activeChatJson = CHAT_JSON_2;
 			loadDialogueStage();
-		}, activeChatJson.portal.delay * 1000);
+		}, activeChatJson.portal.delay * 1000 * !window.skipDialogues);
 	} else if (typeof activeChatJson.chatBar.delay === 'number') {
 		setTimeout(() => {
 			const title = document.createElement('h4');
@@ -115,7 +116,7 @@ function loadDialogueStage() {
 			}
 
 			document.getElementById('chatScrollBox').className = '';
-		}, activeChatJson.chatBar.delay * 1000);
+		}, activeChatJson.chatBar.delay * 1000 * !window.skipDialogues);
 	}
 }
 

@@ -2,6 +2,8 @@
 
 html {
 	font-size: 21px;
+
+	height: -webkit-fill-available;
 }
 body {
 	background-color: #abb;
@@ -43,6 +45,7 @@ body {
 #chatScrollBox {
 	display: block;
 	height: calc(100vh - 4.5rem - 5rem);
+	min-height: -webkit-fill-available;
 
 	background-color: #eef;
 	border-radius: 1rem;
